@@ -51,7 +51,7 @@
      font-weight: 500;
      margin: 0 20px;
      border-bottom: 3px solid transparent;
-     transition: 0.5 ease-in;
+     transition: 0.5s ease-in;
  }
 
  .navbar a:hover,
@@ -81,12 +81,14 @@
 
  .home {
      width: 100%;
-     margin-top: 100px;
+     /* margin-top: 100px; */
+     /* padding-top: 150px; */
      background: rgb(241, 241, 241);
      display: flex;
      align-items: center;
      gap: 7em;
      padding: 30px 12%;
+     padding-top: 100px;
  }
 
  .home-content {
@@ -108,7 +110,7 @@
  }
 
  .btn-box {
-     width: 345px;
+     width: 100%;
      display: flex;
      gap: 2em;
      margin-top: 15px;
@@ -133,7 +135,7 @@
      border: 2px solid black;
  }
 
- .btn-2 {
+ .btn-2{
      padding: 15px 28px;
      background-color: orangered;
      color: white;
@@ -145,7 +147,7 @@
      transition: 0.3s ease;
      cursor: pointer;
  }
-
+ 
  .btn-2:hover {
      background-color: white;
      color: orangered;
@@ -153,7 +155,7 @@
 
  .img-box img {
      border-radius: 50%;
-     width: 100%;
+     width: 400px;
  }
 
  ::-webkit-scrollbar {
@@ -187,12 +189,13 @@
  }
 
  .about-content h2 {
-     text-align: left;
+     text-align: center;
      color: white;
      font-size: 45px;
  }
 
  .about-content h3 {
+    text-align: center;
      font-size: 62px;
      color: white;
  }
@@ -247,6 +250,8 @@
      position: relative;
      bottom: 0;
      width: 100%;
+     min-height: 218.77px;
+     max-height: 218.77px;
      padding: 40px 0;
      background-color: black;
  }
@@ -269,13 +274,15 @@
      border-radius: 50%;
      margin: 8px;
      box-shadow: inset 0 0 10px orangered, 0 0 10px orangered;
-     transition: 0.3 ease;
+     transition: 0.5s ease;
+     position: relative;
+     cursor: pointer;
  }
 
  .footer .social a:hover {
-     transform: scale(1.1)translatey(-10px);
      color: orangered;
-     border: 2px solid orangered;
+     /* position: relative; */
+     top: -10px;
  }
 
  .footer ul {
@@ -317,7 +324,8 @@
         padding: 10px;
     }
     .navbar{
-        margin: 20px 0px;
+        margin: 10px 0px;
+        display: flex;
     }
     .navbar a{
         margin: 10px;
@@ -325,6 +333,8 @@
     .home{
         flex-direction: column;
         gap: 2rem;
+        /* margin-top: 120px; */
+        padding-top: 160px;
     }
     .img1{
         width: 100% !important;
@@ -332,9 +342,13 @@
     .about{
         flex-direction: column;
         gap: 2rem;
+        text-align: center;
     }
     .about-content p{
         margin: 1em 0em;
+    }
+    .about-content h2 {
+        text-align: center;
     }
     .about-content h3{
         font-size: 41px;
@@ -357,6 +371,12 @@
  @media screen and (min-width:451px) and (max-width:900px) {
     .img-box img{
         display: none;
+    }
+    .home{
+        padding-top: 150px;
+    }
+    .navbar{
+        display: flex;
     }
     .about {
         flex-direction: column;
