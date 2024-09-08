@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio </title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      <link rel="stylesheet" href="portfolio.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="header">
-        <a href="" class="logo"><span>R</span><span class="white">K</span><span>S</span></a>
+        <a href="" class="logo" data-aos="flip-right"><span>R</span><span class="white">K</span><span>S</span></a>
 
         <nav class="navbar">
             <a href="#" class="active">Portfolio</a>
@@ -21,7 +22,7 @@
 
      </div>
     <section class="home" id="Home">
-        <div class="home-contact">
+        <div class="home-contact" data-aos="flip-up">
             <h3>Hi,</h3>
 
             <h1>I'm <span>Rohit Kumar Sharma</span> a frontend developer</h1>
@@ -32,33 +33,33 @@
       
             <div class="btn-box">
                 <a class="btn-1" href="#Contect">Contect</a>
-                <a href="" class="btn-2"  download="rohit-Resumer.pdf">Resume</a>
+                <a href="Rohit__Resume.pdf" class="btn-2" >Resume</a>
             </div>
         </div>
 
-         <div class="img-box">
+         <div class="img-box" data-aos="fade-left">
             <img src="Rohit's Photo.jpg" alt="Rohit's Photo" class="img1">
          </div>
 
     </section>
 
     <section class="about" id="About">
-        <div class="about-img">
+        <div class="about-img" data-aos="fade-up">
             <img src="Rohit's Photo.jpg" alt="#" class="img1">
         </div>
 
-      <div class="about-content">
+      <div class="about-content" data-aos="fade-up-left">
         <h2 class="heading">About<span>Me</span></h2>
         <h3>Frontend<span> Developer</span></h3>
 
-        <P>I’m Rohit Kumar Sharma, a BCA graduate from Government Ranbir College with a strong interest in frontend web development. I’m passionate about designing and building user-friendly, visually appealing websites. I’ve gained practical experience through various projects and am always eager to learn new technologies and tools. My goal is to create engaging web experiences and continuously improve my skills in this field.</P>
-        <a href="#" class="btn-2">Experience</a>
+        <P  >I’m Rohit Kumar Sharma, a BCA graduate from Government Ranbir College with a strong interest in frontend web development. I’m passionate about designing and building user-friendly, visually appealing websites. I’ve gained practical experience through various projects and am always eager to learn new technologies and tools. My goal is to create engaging web experiences and continuously improve my skills in this field.</P>
+        <a href="#" class="btn-2" data-aos="fade-up">Experience</a>
 
       </div>
 
     </section>
 
-    <section class="contact-form" id="Contect">
+    <section class="contact-form" id="Contect"  data-aos="fade-up">
         <h2 class="contact-me">Contact<span> Me</span></h2>
 
         <form action="https://formsubmit.co/rohitsharma6102003@gmail.com" method="POST" >
@@ -79,20 +80,19 @@
 
         </div>
 
-        <textarea name="comment"  id="" cols="30" rows="10" placeholder="Your Message">
-        </textarea>
+        <textarea name="comment" id="" cols="30" rows="10" placeholder="Your Message.." ></textarea>
         <input type="submit" value="send Message" class="btn-1">
 
         </form>
     </section>
 
-    <footer class="footer" >
-        <div class="social">
-            <a><i class="fa-brands fa-facebook"></i></a>
-            <a ><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+    <footer class="footer">
+        <div class="social" data-aos="flip-down">
+            <a href="https://www.facebook.com/profile.php?id=100016791999107"><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/rohit.sharma.0001?igsh=MTJxanpoa2dpcDVpZA=="><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/RohitKumarSharma610"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:rohitsharma6102003@gmail.com"><i class="fa-solid fa-envelope"></i></a>
         </div>
 
         <ul class="list">
@@ -115,6 +115,10 @@
         <p class="copyright">&#169 2024 RKS | All Right Reserved</p>
     </footer>
 
-<script src="javascript.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
