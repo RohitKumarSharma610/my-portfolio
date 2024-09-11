@@ -41,9 +41,7 @@
      font-family: cursive;
  }
 
- .white {
-     color: white;
- }
+ 
 
  .navbar a {
      font-size: 18px;
@@ -154,6 +152,8 @@
  .img-box img {
      border-radius: 50%;
      width: 400px;
+     box-shadow: 0 0 25px orangered,
+                 0 0 50px orangered;
  }
 
  ::-webkit-scrollbar {
@@ -182,7 +182,7 @@
      position: relative;
      width: 550px;
      box-shadow: 0 0 25px orangered,
-         0 0 50px orangered;
+                 0 0 50px orangered;
      border-radius: 50%;
  }
 
