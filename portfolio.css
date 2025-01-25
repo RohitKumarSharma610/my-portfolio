@@ -52,8 +52,11 @@
      transition: 0.5s ease-in;
  }
 
- .navbar a:hover,
- .navbar a.active {
+ .navbar a:hover{
+    color: orangered;
+    border-bottom: 3px solid orangered;
+ }
+ .navbar a:focus ,.navbar a:active {
      color: orangered;
      border-bottom: 3px solid orangered;
  }
@@ -324,9 +327,10 @@
     .navbar{
         margin: 10px 0px;
         display: flex;
+        
     }
     .navbar a{
-        margin: 10px;
+        margin: 10px 7px;
     }
     .home{
         flex-direction: column;
